@@ -73,26 +73,26 @@ class OrderResource extends Resource
 
                                 ToggleButtons::make('status')
                                     ->options([
-                                        'Pending' => 'Pending',
+                                        'pending' => 'pending',
                                         'Sedang Dimasak' => 'Sedang Dimasak',
                                         'matang' => 'matang',
                                         'cancelled' => 'Cancelled',
                                     ])
                                     ->colors([
-                                        'Pending' => 'warning',
+                                        'pending' => 'warning',
                                         'Sedang dimasak' => 'success',
                                         'matang' => 'success',
                                         'cancelled' => 'danger',
                                     ])
                                     ->icons([
-                                        'Pending' => 'heroicon-m-arrow-path',
+                                        'pending' => 'heroicon-m-arrow-path',
                                         'Sedang dimasak' => 'heroicon-o-truck',
                                         'matang' => 'heroicon-m-check-badge',
                                         'cancelled' => 'heroicon-o-x-circle',
                                     ])
                                     ->required()
                                     // ->default('new') DIUBAH BAGIAN INI 
-                                    ->default('Pending')
+                                    ->default('pending')
                                     ->inline(),
 
                                 Select::make('currency')
@@ -213,7 +213,7 @@ class OrderResource extends Resource
 
                 SelectColumn::make('status')
                     ->options([
-                        'Pending' => 'Pending',
+                        'pending' => 'pending',
                         'Sedang dimasak' => 'Sedang dimasak',
                         'matang' => 'matang',
                         'cancelled' => 'cancelled',

@@ -63,7 +63,7 @@ class CheckoutPage extends Component
         $order->grand_total = CartManagement::calculateGrandTotal($cart_items);
         $order->payment_method = $this->payment_method;
         $order->payment_status = 'pending';
-        $order->status = 'Pending';
+        $order->status = 'pending';
         $order->currency = 'IDR';
         $order->shipping_amount = 0;
         $order->shipping_method = 'None';
